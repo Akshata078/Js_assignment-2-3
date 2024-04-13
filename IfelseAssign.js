@@ -28,7 +28,7 @@ largestNumber(6,8);
 
 // 3. Write a function that determines if a given year is a leap year.
 function leapYear(year) {
-    if (year % 4 == 0){
+    if ((year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0)){
         console.log(`${year} is a leap year.`);
     }
     else{
